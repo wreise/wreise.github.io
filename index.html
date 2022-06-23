@@ -33,83 +33,128 @@
                 <!--<del>Office 2102, Alan Turin Building, 1, Rue Honoré d'Estienne d'Orves, 91120 Palaiseau.</del>-->
             </p>
             <section>
-                <h1>Research interests</h1>
-                <ul>
-                    <li> Persistent homology theory </li>
-                    <li> Geometric Inference </li>
-                    <li> Signal Processing </li>		
-                </ul>
-            </section>
-            <section>
-                <h1>Talks</h1>
-                Slides and recordings are available on request for selected talks.
-                <ul>
-					<li><strong>Vulgarization seminar for PhD students, LMO</strong><br>
-					November 2021, Orsay<br>
-					<em>Signal processing and topological data analysis for vehicle position estimation</em>
-					<button onclick="showAbstract('Vulgarisation2021')" id="showAbstractButtonVulgarisation2021" style="display: block">Abstract</button>
-					<button onclick="hideAbstract('Vulgarisation2021')" id="hideAbstractButtonVulgarisation2021" style="display: none">Abstract</button>
-					<div id="abstractVulgarisation2021" class="abstract overflow">
-						Les systèmes de positionnement fusionnant GPS et capteurs inertiels ne donnent pas toujours une estimation fiable de la position d'un véhicule.
-						Ceci nous pousse à construire d'autres estimateurs, à partir des mesures de quantités indépendantes, particulièrement du champ magnétique.
-						Après avoir motivé le problème d'estimation de phase et fréquence avec le modèle du champ magnétique, je revisiterai des outils du traitement
-						de signal: la transformée de Fourier discrète locale et la méthode des zéros-crossings. Ces deux méthodes présentent des limitations que je tente de
-						lever dans le cadre ma thèse. Basée sur des notions de l'analyse topologique des données, une alternative que je propose permet d'améliorer la qualité de
-						l'estimation à basse vitesse.
-					</div></li>
-					
-					<li><strong> Geometry and Topology meet Data Analysis and Machine Learning 2021</strong><br>
-					July 2021, Online<br>
-					<em>Odometry with persistent homology</em>
-					<button onclick="showAbstract('GTDAML2021')" id="showAbstractButtonGTDAML2021" style="display: block">Abstract</button>
-					<button onclick="hideAbstract('GTDAML2021')" id="hideAbstractButtonGTDAML2021" style="display: none">Abstract</button>
-					<div id="abstractGTDAML2021" class="abstract overflow">
-						Instantaneous frequency or phase estimation is important to recover information contained in a signal, for example, encoded through frequency modulation.
-						In that particular case, the modulated wave is sinusoidal with a simple structure. Standard methods like counting the number of zero-crossings or the Hilbert
-						transform estimate these quantities correctly. In other problems though, the form of the modulated wave may not be controlled or known and the classical methods
-						can be obscured by additional frequencies contained in it. We propose a method that generalizes period counting to a wider collection of signals. Using the
-						sub-level set homology of one-dimensional signals, we characterize its periodic structure topologically and use it to segment the signal, providing a phase estimate
-						akin to zero-crossings. Our method depends on a scale parameter which we also show how to choose.
+                <h1>Research</h1>
+                My interests revolve around applications of persistent homology theory and geometric inference techniques.
+                I am particularly interested in statistical settings and applications to signal processing.
+				<section>
+					<h1>Pre-prints</h1>
+					<ul>
+						<li>Topological phase estimation method for reparameterized periodic functions (with T. Bonis, F. Chazal, B. Michel)
+						<a href="https://arxiv.org/abs/2205.14390">Arxiv preprint</a></li>
+						<li>giotto-tda: A Topological Data Analysis Toolkit for Machine Learning and Data Exploration
+						<a href="https://arxiv.org/abs/2004.02551">NeurIPS 2020 workshop "Topological Data Analysis and beyond"</a></li>
+					</ul>
+				</section>
+            
+				<section>
+					<h1>Talks</h1>
+					Slides and recordings are available on request for selected talks.
+					<ul>
+						
+						<li><strong>The 2nd Young Topologist Seminar in AI and biological sciences</strong><br>
+						July 2022, Beijing Institute of Mathematical Sciences and Applications, China<br>
+						<em>A tutorial on persistent homology with GUDHI and giotto-tda</em>
+						<button onclick="showAbstract('YTS2022')" id="showAbstractButtonYTS2022" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('YTS2022')" id="hideAbstractButtonYTS2022" style="display: none">Abstract</button>
+						<div id="abstractYTS2022" class="abstract overflow">
+							Persistent homology, a tool from Topological Data Analysis, has witnessed an increasing number of applications. Numerous implementations of complex constructions,
+							reduction algorithms and vectorization methods for persistent homology are now widely available, making topological descriptors accessible and computable in
+							different contexts. In the first part of the talk, we will study a topological inference example, highlighting the features and flexibility of Gudhi: a library
+							with efficient and flexible algorithms to construct simplicial complexes and compute geometric approximations of shapes. In the second part of the talk, we will
+							focus on a time-series classification example, where we will illustrate the functionalities of giotto-tda: a Python library that integrates high-performance C++
+							implementations with machine learning via a scikit-learn–compatible API.
+						</div></li>
+						
+						<li><strong>Journées de Statistique de la Société Francaise de statistique 2022</strong><br>
+						June 2022, Lyon<br>
+						<em>Topological period counting method for reparametrized functions</em>
+						<button onclick="showAbstract('JDS2022')" id="showAbstractButtonJDS2022" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('JDS2022')" id="hideAbstractButtonJDS2022" style="display: none">Abstract</button>
+						<div id="abstractJDS2022" class="abstract overflow">
+							We consider a signal composed of several periods of a function. We observe its reparametrisation corrupted by noise and we are interested in
+							recovering the number of observed periods. It is a version of the phase estimation problem, often stated for functions which are simple or known.
+							Interested in the case when the underlying function is unknown, we concentrate on estimators which quantify the shape of the function. We study
+							the persistent homology of the signal, which synthesizes the evolution of its sublevel sets and we introduce estimators of the number of observed periods.
+							Those estimators do not assume prior knowledge of the reparametrized function and can be used on a class of generic signals.
+						</div></li>
+						
+						<li><strong>DataShape Seminar</strong><br>
+						May 2022, Porquerolles<br>
+						<em>Stability of topological signatures of reparametrized periodic functions</em>
+						<!--<button onclick="showAbstract('Porquerolles2022')" id="showAbstractButtonPorquerolles2022" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('Porquerolles2022')" id="hideAbstractButtonPorquerolles2022" style="display: none">Abstract</button>
+						<div id="abstractPorquerolles2022" class="abstract overflow">
+							(Not available yet).
+						</div>-->
+						</li>
+						
+						<li><strong>Vulgarization seminar for PhD students, LMO</strong><br>
+						November 2021, Orsay<br>
+						<em>Signal processing and topological data analysis for vehicle position estimation</em>
+						<button onclick="showAbstract('Vulgarisation2021')" id="showAbstractButtonVulgarisation2021" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('Vulgarisation2021')" id="hideAbstractButtonVulgarisation2021" style="display: none">Abstract</button>
+						<div id="abstractVulgarisation2021" class="abstract overflow">
+							Les systèmes de positionnement fusionnant GPS et capteurs inertiels ne donnent pas toujours une estimation fiable de la position d'un véhicule.
+							Ceci nous pousse à construire d'autres estimateurs, à partir des mesures de quantités indépendantes, particulièrement du champ magnétique.
+							Après avoir motivé le problème d'estimation de phase et fréquence avec le modèle du champ magnétique, je revisiterai des outils du traitement
+							de signal: la transformée de Fourier discrète locale et la méthode des zéros-crossings. Ces deux méthodes présentent des limitations que je tente de
+							lever dans le cadre ma thèse. Basée sur des notions de l'analyse topologique des données, une alternative que je propose permet d'améliorer la qualité de
+							l'estimation à basse vitesse.
+						</div></li>
+						
+						<li><strong> Geometry and Topology meet Data Analysis and Machine Learning 2021</strong><br>
+						July 2021, Online<br>
+						<em>Odometry with persistent homology</em>
+						<button onclick="showAbstract('GTDAML2021')" id="showAbstractButtonGTDAML2021" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('GTDAML2021')" id="hideAbstractButtonGTDAML2021" style="display: none">Abstract</button>
+						<div id="abstractGTDAML2021" class="abstract overflow">
+							Instantaneous frequency or phase estimation is important to recover information contained in a signal, for example, encoded through frequency modulation.
+							In that particular case, the modulated wave is sinusoidal with a simple structure. Standard methods like counting the number of zero-crossings or the Hilbert
+							transform estimate these quantities correctly. In other problems though, the form of the modulated wave may not be controlled or known and the classical methods
+							can be obscured by additional frequencies contained in it. We propose a method that generalizes period counting to a wider collection of signals. Using the
+							sub-level set homology of one-dimensional signals, we characterize its periodic structure topologically and use it to segment the signal, providing a phase estimate
+							akin to zero-crossings. Our method depends on a scale parameter which we also show how to choose.
+							</div></li>
+
+						<li> <strong>POSTECH MINDS workshop on TDA & ML, POSTECH </strong><br>
+						July 2021, Online<br>
+						<em>Tutorial on giotto-tda (jointly with Umberto Lupo)</em>
+						<button onclick="showAbstract('POSTECH')" id="showAbstractButtonPOSTECH" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('POSTECH')" id="hideAbstractButtonPOSTECH" style="display: none">Abstract</button>
+						<div id="abstractPOSTECH" class="abstract overflow">
+							giotto-tda is a Python library that integrates high-performance topological data analysis with machine learning via a scikit-learn–compatible API and state-of-the-art C++ implementations.
+							Its large selection of preprocessing techniques, of persistent homology algorithms, and of featurization methods for persistence diagrams, allows for the flexible creation and tuning of end-to-end topological machine learning pipelines for various types of data (e.g. point clouds, graphs, images, and time series).
+							The Mapper algorithm is implemented in giotto-tda as a scikit-learn pipeline with a parallelized clustering step. Furthermore, an interactive plotting API allows one to tune Mapper’s hyperparameters and observe how the resulting graph changes in real time.
+							In <a href="https://github.com/ulupo/giotto-tda_demo/tree/bc9665a3eeba701d6f9282d81e44836edec53a80", style="color:black">this tutorial</a>, we will illustrate some of these functionalities by a) showing how to create pipelines for time series classification using the time-delay embedding technique, and b) showcasing the library’s generic and extensible Mapper implementation.
 						</div></li>
 
-					<li> <strong>POSTECH MINDS workshop on TDA & ML, POSTECH </strong><br>
-					July 2021, Online<br>
-					<em>Tutorial on giotto-tda (jointly with Umberto Lupo)</em>
-					<button onclick="showAbstract('POSTECH')" id="showAbstractButtonPOSTECH" style="display: block">Abstract</button>
-					<button onclick="hideAbstract('POSTECH')" id="hideAbstractButtonPOSTECH" style="display: none">Abstract</button>
-					<div id="abstractPOSTECH" class="abstract overflow">
-						giotto-tda is a Python library that integrates high-performance topological data analysis with machine learning via a scikit-learn–compatible API and state-of-the-art C++ implementations.
-						Its large selection of preprocessing techniques, of persistent homology algorithms, and of featurization methods for persistence diagrams, allows for the flexible creation and tuning of end-to-end topological machine learning pipelines for various types of data (e.g. point clouds, graphs, images, and time series).
-						The Mapper algorithm is implemented in giotto-tda as a scikit-learn pipeline with a parallelized clustering step. Furthermore, an interactive plotting API allows one to tune Mapper’s hyperparameters and observe how the resulting graph changes in real time.
-						In <a href="https://github.com/ulupo/giotto-tda_demo/tree/bc9665a3eeba701d6f9282d81e44836edec53a80", style="color:black">this tutorial</a>, we will illustrate some of these functionalities by a) showing how to create pipelines for time series classification using the time-delay embedding technique, and b) showcasing the library’s generic and extensible Mapper implementation.
-					</div></li>
+						<li><strong> DataShape seminar, Inria</strong><br>
+						November 2020, Online<br>
+						<em>Towards Pattern Detection using Dynamic Time Warping</em>
+						<button onclick="showAbstract('Datashape')" id="showAbstractButtonDatashape" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('Datashape')" id="hideAbstractButtonDatashape" style="display: none">Abstract</button>
+						<div id="abstractDatashape" class="abstract overflow">
+							This talk will be centered around pattern detection and Dynamic Time Warping. Using the problem of velocity estimation from magnetic data in navigation systems,
+							I will motivate the need for detecting repeated patterns in time series and the use of Dynamic Time Warping to that aim. I will recall the definition as the technique was originally introduced,
+							and present a selection of more recent variants, including a differentiable version.
+							</div></li>
 
-					<li><strong> DataShape seminar, Inria</strong><br>
-					November 2020, Online<br>
-					<em>Towards Pattern Detection using Dynamic Time Warping</em>
-					<button onclick="showAbstract('Datashape')" id="showAbstractButtonDatashape" style="display: block">Abstract</button>
-					<button onclick="hideAbstract('Datashape')" id="hideAbstractButtonDatashape" style="display: none">Abstract</button>
-					<div id="abstractDatashape" class="abstract overflow">
-						This talk will be centered around pattern detection and Dynamic Time Warping. Using the problem of velocity estimation from magnetic data in navigation systems,
-						I will motivate the need for detecting repeated patterns in time series and the use of Dynamic Time Warping to that aim. I will recall the definition as the technique was originally introduced,
-						and present a selection of more recent variants, including a differentiable version.
+						<li> <strong>Applied Topology Seminar, EPFL </strong><br>
+						December 2019, Lausanne<br>
+						<em>Audio identification using Persistent Homology</em>
+						<button onclick="showAbstract('Apptop2019')" id="showAbstractButtonApptop2019" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('Apptop2019')" id="hideAbstractButtonApptop2019" style="display: none">Abstract</button>
+						<div id="abstractApptop2019" class="abstract overflow">
+							A fingerprint of an audio signal is a descriptive summary that encodes relevant information for a particular, signal-processing task. We focus on audio identification, which consists of detecting when pairs of tracks are similar, for example, one is a cover or an obfuscated version of the other. In this talk, I will review industry-standard approaches, introduce fingerprints based on persistent homology features of spectral representations of songs and propose an algorithm for audio identification. Finally, I will comment on the characteristics of the proposed fingerprints based on the performance of the identification algorithm on a set of obfuscated songs.
 						</div></li>
-
-					<li> <strong>Applied Topology Seminar, EPFL </strong><br>
-					December 2019, Lausanne<br>
-					<em>Audio identification using Persistent Homology</em>
-					<button onclick="showAbstract('Apptop2019')" id="showAbstractButtonApptop2019" style="display: block">Abstract</button>
-					<button onclick="hideAbstract('Apptop2019')" id="hideAbstractButtonApptop2019" style="display: none">Abstract</button>
-					<div id="abstractApptop2019" class="abstract overflow">
-						A fingerprint of an audio signal is a descriptive summary that encodes relevant information for a particular, signal-processing task. We focus on audio identification, which consists of detecting when pairs of tracks are similar, for example, one is a cover or an obfuscated version of the other. In this talk, I will review industry-standard approaches, introduce fingerprints based on persistent homology features of spectral representations of songs and propose an algorithm for audio identification. Finally, I will comment on the characteristics of the proposed fingerprints based on the performance of the identification algorithm on a set of obfuscated songs.
-					</div></li>
-					
-					<li> <strong>Topological Data Analysis Meetup, Alan Turing Institute </strong><br>
-					April 2019, London<br>
-					<em>Audio identification using Persistent Homology</em>
-					</li>
-                </ul>
-            </section>
+						
+						<li> <strong>Topological Data Analysis Meetup, Alan Turing Institute </strong><br>
+						April 2019, London<br>
+						<em>Audio identification using Persistent Homology</em>
+						</li>
+					</ul>
+				</section>
+			</section>
             <section>
 				<h1>Teaching</h1>
 				<ul>
