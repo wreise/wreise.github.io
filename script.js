@@ -21,18 +21,32 @@ function switchAbstract(name) {
   switchElementDisplay("hideAbstractButton"+name)
   switchElementDisplay("abstract"+name)
 }
+function switchVisibility(nameShow, nameHide){
+	setElementDisplay(nameHide, "none");
+	setElementDisplay(nameShow, "block");
+	}
 
 function showAbstract(name) {
-	setElementDisplay("showAbstractButton"+name, "none");
-	setElementDisplay("hideAbstractButton"+name, "block");
+	switchVisibility("hideAbstractButton"+name, "showAbstractButton"+name);
 	
 	var abstract = document.getElementById("abstract"+name, "block");
 	abstract.classList.remove("overflow")
 }
 
 function hideAbstract(name) {
-	setElementDisplay("showAbstractButton"+name, "block");
-	setElementDisplay("hideAbstractButton"+name, "none");
+	switchVisibility("showAbstractButton"+name, "hideAbstractButton"+name);
 	var abstract = document.getElementById("abstract"+name, "block");
 	abstract.classList.add("overflow")
+}
+
+
+
+function showSection(name) {
+	switchVisibility("hideSectionButton"+name, "showSectionButton"+name);
+	setElementDisplay("section"+name, "block")
+}
+
+function hideSection(name) {
+	switchVisibility("showSectionButton"+name, "hideSectionButton"+name);
+	setElementDisplay("section"+name, "none")
 }
