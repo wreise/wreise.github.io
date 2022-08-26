@@ -24,7 +24,7 @@
             </div>
             <p> 
                 I am a PhD student at <a href="https://www.imo.universite-paris-saclay.fr/-Probabilites-et-Statistiques-" target="_blank">Université Paris-Saclay</a> and
-                <a href="https://team.inria.fr/datashape/" target="_blank">Inria (DataShape)</a> under the supervision of
+                <a href="https://team.inria.fr/datashape/" target="_blank">Inria (DataShape)</a> working with
                 <a href="https://geometrica.saclay.inria.fr/team/Fred.Chazal/" target="_blank">Frédéric Chazal</a> and
                 <a href="http://bertrand.michel.perso.math.cnrs.fr/" target="_blank">Bertrand Michel</a>. <br><br>
                 <b>Mail:</b> wojciech [dot] reise [at] universite-paris-saclay [dot] fr <br>
@@ -33,15 +33,17 @@
             </p>
             <section>
                 <h1>Research</h1>
-                My interests revolve around applications of persistent homology theory and geometric inference techniques.
-                I work on geometric and topological characteristics and their statistical properties, to quantify recursive structures in time series.
-                I am particularly interested in applications to signal processing.
+                I am interested in applications of persistent homology and geometric inference.
+                Currently, I work on using topological and geometric descriptors of magnetic data measured inside a moving vehicle
+                to infer its velocity and heading. 
+                Mathematically, I study the statistical behavior of functionals of persistence, in non-stationary regimes with dependence.
+                <!--I am particularly interested in applications to signal processing.-->
 				<section>
 					<h1>Pre-prints</h1>
 					<ul>
 						<li>Topological phase estimation method for reparameterized periodic functions (with T. Bonis, F. Chazal, B. Michel)
 						<a href="https://arxiv.org/abs/2205.14390">Arxiv preprint</a></li>
-						<li>giotto-tda: A Topological Data Analysis Toolkit for Machine Learning and Data Exploration
+						<li>Giotto-tda: A Topological Data Analysis Toolkit for Machine Learning and Data Exploration
 						<a href="https://arxiv.org/abs/2004.02551">NeurIPS 2020 workshop "Topological Data Analysis and beyond"</a></li>
 					</ul>
 				</section>
@@ -50,6 +52,22 @@
 					<h1>Talks</h1>
 					Slides and recordings are available on request for selected talks.
 					<ul>
+						
+						<li><strong>Rencontres Mathématiques-Mécanique, Congres Francais de Mécanique</strong><br>
+						August 2022, Nantes, France<br>
+						<em>A tutorial on persistent homology with GUDHI and giotto-tda</em>
+						<button onclick="showAbstract('CFM2022')" id="showAbstractButtonCFM2022" style="display: block">Abstract</button>
+						<button onclick="hideAbstract('CFM2022')" id="hideAbstractButtonCFM2022" style="display: none">Abstract</button>
+						<div id="abstractCFM2022" class="abstract overflow">
+							On considère un signal constitué de plusieurs périodes d’une fonction périodique dont on observe une
+							reparamétrisation bruitée. Le problème d’estimation de phase consiste à retrouver cette reparamétrisation et,
+							en particulier, le nombre de périodes observées. Des estimateurs existent quand la fonction périodique
+							est simple ou connue. On se place dans le cas où la fonction reparamétrisée est inconnue et on s’intéresse ici
+							à des estimateurs basés sur la quantification de la forme du signal. On propose un estimateur du nombre de périodes
+							construit sur l’homologie persistante du signal qui synthétise la structure temporelle des extremas locaux de celui-ci.
+							On en déduit un estimateur de la reparamétrisation. Ce travail est motivé par une application au positionement
+							de véhicule, sur laquelle on évalue l’approche proposée.
+						</div></li>
 						
 						<li><strong>The 2nd Young Topologist Seminar in AI and biological sciences</strong><br>
 						July 2022, Beijing Institute of Mathematical Sciences and Applications, China<br>
