@@ -28,11 +28,11 @@
 		</figure>
 	</div>
 	<p>
-		I am a machine learning engineer at <a href="https://www.akur8.com/">Akur8</a>. With my
-		colleagues, we develop a SaaS that leverages statistical learning to help actuaries model the
-		risk associated with insurance contracts and develop pricing strategies. Most recently, I have
-		been working on a structured representation of complex rating plans.<br /><br />
-		Before that, I wrote a <a href="data/thesis/wReise_thesis_24_01_01.pdf">doctoral thesis</a>,
+		I am a Tech Lead at <a href="https://www.akur8.com/">Akur8</a>. With my
+		colleagues, we develop a software for Pricing actuaries. Most recently, I was an Lead and Engineering Manager working on Rate Repo,
+		a US-centric product to build structured representations of complex rating plans.<br /><br />
+		<br /><br />
+		Before my career in software, I wrote a <a href="data/thesis/wReise_thesis_24_01_01.pdf">doctoral thesis</a>,
 		under the supervision of
 		<a href="https://geometrica.saclay.inria.fr/team/Fred.Chazal/" target="_blank">Frédéric Chazal</a
 		>
