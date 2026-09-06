@@ -29,8 +29,8 @@
 	</div>
 	<p>
 		I am a Tech Lead at <a href="https://www.akur8.com/">Akur8</a>. With my
-		colleagues, we develop a software for Pricing actuaries. Most recently, I was an Lead and Engineering Manager working on Rate Repo,
-		a US-centric product to build structured representations of complex rating plans.<br /><br />
+		colleagues, we develop software for Pricing actuaries. Most recently, I was a Lead and an Engineering Manager working on Rate Repo,
+		a US-centric product to build structured representations of complex rating plans.
 		<br /><br />
 		Before my career in software, I wrote a <a href="data/thesis/wReise_thesis_24_01_01.pdf">doctoral thesis</a>,
 		under the supervision of
@@ -46,7 +46,7 @@
 		topological techniques, I studied periodic functions with phase variation, a model motivated by
 		a problem in vehicle navigation.
 		<br /><br />
-		I am not actively working in new academic research in parallel to my role Akur8, but I will be happy
+		I am not currently doing any research in parallel to my role Akur8, but I will be happy
 		to discuss previous work and current research directions.
 		<br /><br />
 		<b>Mail:</b> reisewojciech [at] gmail [dot] com <br />
