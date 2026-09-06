@@ -4,6 +4,10 @@
 	import CollapsibleSection from '$lib/CollapsibleSection.svelte';
 </script>
 
+<svelte:head>
+	<title>Wojciech Reise - Home</title>
+</svelte:head>
+
 <div class="main_wrapper">
 	<header></header>
 

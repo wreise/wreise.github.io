@@ -1,0 +1,143 @@
+/*
+ * CV styling. Everything is scoped under `.cv`, so the sheet can be dropped
+ * into any page without fighting the site-wide rules in app.css.
+ * Override the custom properties to restyle it.
+ */
+.cv {
+    --cv-text: #333;
+    --cv-muted: #666;
+    --cv-link: #0366d6;
+    --cv-rule: #eee;
+    --cv-measure: 800px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--cv-text);
+    max-width: var(--cv-measure);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cv a {
+    color: var(--cv-link);
+    text-decoration: none;
+}
+
+.cv a:hover {
+    text-decoration: underline;
+}
+
+.cv ul {
+    padding-left: 1.5em;
+}
+
+.cv li {
+    margin-bottom: 0.5em;
+}
+
+/* Header */
+
+.cv-header {
+    margin-bottom: 2em;
+}
+
+.cv-header h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    border-bottom: none;
+}
+
+.cv-subtitle {
+    color: var(--cv-muted);
+    margin: 0.5em 0;
+}
+
+.cv-contact {
+    margin: 1em 0;
+}
+
+.cv-contact a {
+    margin-right: 1em;
+}
+
+/* Sections */
+
+.cv-section {
+    margin-bottom: 2em;
+}
+
+.cv-section h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid var(--cv-rule);
+    padding-bottom: 0.3em;
+}
+
+/* Entries */
+
+.cv-entry {
+    margin-bottom: 1.5em;
+}
+
+.cv-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3em;
+}
+
+.cv-entry-title {
+    font-weight: 600;
+}
+
+.cv-entry-date {
+    color: var(--cv-muted);
+    font-size: 0.9em;
+    white-space: nowrap;
+    margin-left: 1em;
+}
+
+.cv-entry-subtitle {
+    color: var(--cv-muted);
+    font-style: italic;
+    margin-bottom: 0.3em;
+}
+
+/* Publications */
+
+.cv-publication {
+    margin-bottom: 1em;
+}
+
+.cv-publication-authors {
+    color: var(--cv-muted);
+    font-size: 0.95em;
+}
+
+.cv-publication-venue {
+    font-style: italic;
+    color: var(--cv-muted);
+}
+
+/* Inline lists, e.g. languages */
+
+.cv-inline-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+@media (max-width: 600px) {
+    .cv-entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cv-entry-date {
+        margin-left: 0;
+        margin-top: 0.2em;
+    }
+}

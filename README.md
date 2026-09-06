@@ -27,8 +27,10 @@ publishes `build/` to GitHub Pages. No manual step needed.
 | Path | Contents |
 | --- | --- |
 | `src/routes/+page.svelte` | The homepage — publications, talks, links |
+| `src/routes/cv/+page.svelte` | The CV at `/cv`, composed from `src/lib/cv/` |
 | `src/routes/+layout.svelte` | Shared page shell |
 | `src/lib/` | Components: `Publication`, `Talk`, `CollapsibleSection` |
+| `src/lib/cv/` | CV building blocks, its content in `cv-data.js` and its styles in `cv.css` |
 | `src/app.css`, `src/app.html` | Global styles and HTML template |
 | `static/` | Copied verbatim to the site root: PDFs, fonts, images |
 
