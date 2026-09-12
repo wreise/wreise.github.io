@@ -10,18 +10,22 @@
 
 <div class="cv-entry">
     <div class="cv-entry-header">
-        <div class="cv-entry-title">{title}</div>
+        <div class="cv-entry-main">
+            <div class="cv-entry-title">{title}</div>
+            {#if subtitle}
+                <div class="cv-entry-subtitle">{subtitle}</div>
+            {/if}
+            {#if description}
+                <div class="cv-entry-description">{description}</div>
+            {/if}
+            {#if children}
+                {@render children()}
+            {/if}
+        </div>
         {#if date}
-            <div class="cv-entry-date">{dateLabel}</div>
+            <div class="cv-entry-meta">
+                <div class="cv-entry-date">{dateLabel}</div>
+            </div>
         {/if}
     </div>
-    {#if subtitle}
-        <div class="cv-entry-subtitle">{subtitle}</div>
-    {/if}
-    {#if description}
-        <div class="cv-entry-description">{description}</div>
-    {/if}
-    {#if children}
-        {@render children()}
-    {/if}
 </div>

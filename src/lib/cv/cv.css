@@ -113,11 +113,18 @@
     margin-bottom: 1.5em;
 }
 
+/* Two columns: the title and prose on the left, the dates and location in a
+   parallel column on the right. */
 .cv-entry-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 0.3em;
+}
+
+.cv-entry-main {
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .cv-entry-title {
@@ -145,8 +152,9 @@
    The dates and the location share a right-hand column, stacked. */
 
 .cv-entry-meta {
+    flex: none;
     text-align: right;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .cv-entry-location {
@@ -219,5 +227,10 @@
     .cv-entry-meta {
         text-align: left;
         margin-left: 0;
+    }
+
+    .cv-entry-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
