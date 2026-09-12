@@ -4,6 +4,7 @@
         CvHeader,
         CvSection,
         CvEntry,
+        CvExperience,
         CvPublication,
         CvInlineList
     } from '$lib/cv';
@@ -24,8 +25,14 @@
     </CvSection>
 
     <CvSection title="Experience">
-        {#each cv.experience as entry}
-            <CvEntry {...entry} />
+        {#each cv.experience as group}
+            <CvExperience {...group} />
+        {/each}
+    </CvSection>
+
+    <CvSection title="Leadership & Service">
+        {#each cv.leadership as group}
+            <CvExperience {...group} />
         {/each}
     </CvSection>
 

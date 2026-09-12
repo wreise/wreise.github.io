@@ -32,45 +32,120 @@ export const cv = {
 		}
 	],
 
+	// Experience is grouped by company; each group lists its roles, newest first.
+	// A role needs a title and a start date; end, location, description and
+	// achievements are optional (an open-ended role is rendered as "present").
 	experience: [
 		{
-			title: 'Machine Learning Engineer, Akur8',
-			date: '11.2023-'
+			organisation: 'Akur8',
+			roles: [
+				{
+					title: 'Tech Lead',
+					date: { start: '09.2026' },
+					location: { city: 'Paris', country: 'FR' }
+				},
+				{
+					title: 'Engineering Manager',
+					date: { start: '02.2026', end: '08.2026' },
+					location: { city: 'Paris', country: 'FR' }
+				},
+				{
+					title: 'Senior Machine Learning Engineer',
+					date: { start: '02.2025', end: '02.2026' },
+					location: { city: 'Montréal', country: 'CA' }
+				},
+				{
+					title: 'Machine Learning Engineer',
+					date: { start: '11.2023', end: '02.2025' },
+					location: { city: 'Paris', country: 'FR' }
+				}
+			]
 		},
 		{
-			title: 'Research intern, L2F',
-			date: '01.2020-07.2020',
-			description:
-				'Implementation of topological data analysis methods and showcasing their applications. Development of a no-code interface for classification model training.'
+			organisation: 'L2F',
+			roles: [
+				{
+					title: 'Research intern',
+					date: { start: '01.2020', end: '07.2020' },
+					location: { city: 'Lausanne', country: 'CH' },
+					description:
+						'Implementation of topological data analysis methods and showcasing their applications. Development of a no-code interface for classification model training.'
+				}
+			]
 		},
 		{
-			title: 'Research intern, Spotify',
-			date: '07.2019-09.2019',
-			description:
-				'Design and implementation of an audio identification algorithm based on topological data analysis.'
+			organisation: 'Spotify',
+			roles: [
+				{
+					title: 'Research intern',
+					date: { start: '07.2019', end: '09.2019' },
+					location: { city: 'London', country: 'UK' },
+					description:
+						'Design and implementation of an audio identification algorithm based on topological data analysis.'
+				}
+			]
 		},
 		{
-			title: 'Data analysis intern, Dominice & Co',
-			date: '07.2018-12.2018',
-			description:
-				'Analysis of historical daily prices and volatilities, work on in-house server and trading infrastructure.'
+			organisation: 'Dominicé & Co',
+			roles: [
+				{
+					title: 'Data analysis intern',
+					date: { start: '07.2018', end: '12.2018' },
+					location: { city: 'Geneva', country: 'CH' },
+					description:
+						'Analysis of historical daily prices and volatilities, work on in-house server and trading infrastructure.'
+				}
+			]
 		},
 		{
-			title: 'Treasurer, Club Montagne (EPFL)',
-			date: '04.2018-03.2019',
-			description: 'Accounting, budget planning of subsidized outings and courses.'
+			organisation: 'Transports Lausannois',
+			roles: [
+				{
+					title: 'Data analysis intern',
+					date: { start: '07.2016', end: '09.2016' },
+					location: { city: 'Lausanne', country: 'CH' },
+					description:
+						'Analysis of the quality (punctuality and capacity) of the services, forecasting the number of passengers.'
+				}
+			]
+		}
+	],
+
+	// Volunteer and association roles, same shape as `experience`.
+	leadership: [
+		{
+			organisation: 'Couleur Swing',
+			roles: [
+				{
+					title: 'Dance Teacher',
+					date: { start: '09.2026' },
+					location: { city: 'Paris', country: 'FR' },
+					description: 'Teaching weekly Balboa classes, 3 different levels'
+				}
+			]
 		},
 		{
-			title: 'Data analysis intern, Transport Lausannois',
-			date: '07.2016-09.2016',
-			description:
-				'Analysis of the quality (punctuality and capacity) of the services, forecasting the number of passengers.'
+			organisation: 'Club Montagne (EPFL)',
+			roles: [
+				{
+					title: 'Treasurer',
+					date: { start: '04.2018', end: '03.2019' },
+					location: { city: 'Lausanne', country: 'CH' },
+					description: 'Accounting, budget planning of subsidized outings and courses.'
+				}
+			]
 		},
 		{
-			title: 'Member, ShARE Association (EPFL)',
-			date: '09.2015-02.2018',
-			description:
-				'Consulting-like projects for the EPFL Technology Transfer Office. Manager of a project for the ThinkEE startup 10-12.2017.'
+			organisation: 'ShARE Association (EPFL)',
+			roles: [
+				{
+					title: 'Member',
+					date: { start: '09.2015', end: '02.2018' },
+					location: { city: 'Lausanne', country: 'CH' },
+					description:
+						'Consulting-like projects for the EPFL Technology Transfer Office. Manager of a project for the ThinkEE startup 10-12.2017.'
+				}
+			]
 		}
 	],
 

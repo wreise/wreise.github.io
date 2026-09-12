@@ -137,6 +137,32 @@
     margin-bottom: 0.3em;
 }
 
+/* Experience and leadership: an organisation, with one or more roles under it */
+
+.cv-organisation {
+    margin-bottom: 1.5em;
+}
+
+/* Only a company with several roles needs the bracket that ties them
+   together; a lone role stays flush with the company name. */
+.cv-roles-grouped {
+    margin-left: 0.2em;
+    padding-left: 1em;
+    border-left: 2px solid var(--cv-rule);
+}
+
+.cv-role + .cv-role {
+    margin-top: 0.8em;
+}
+
+.cv-role-title {
+    font-weight: 500;
+}
+
+.cv-achievements {
+    margin: 0.3em 0 0;
+}
+
 /* Publications */
 
 .cv-publication {
