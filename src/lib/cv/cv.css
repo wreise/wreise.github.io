@@ -131,10 +131,28 @@
     margin-left: 1em;
 }
 
+.cv-entry-meta .cv-entry-date {
+    margin-left: 0;
+}
+
 .cv-entry-subtitle {
     color: var(--cv-muted);
     font-style: italic;
     margin-bottom: 0.3em;
+}
+
+/* Experience and leadership: an organisation, with one or more roles under it.
+   The dates and the location share a right-hand column, stacked. */
+
+.cv-entry-meta {
+    text-align: right;
+    margin-left: 1em;
+}
+
+.cv-entry-location {
+    color: var(--cv-muted);
+    font-size: 0.9em;
+    white-space: nowrap;
 }
 
 /* Experience and leadership: an organisation, with one or more roles under it */
@@ -196,5 +214,10 @@
     .cv-entry-date {
         margin-left: 0;
         margin-top: 0.2em;
+    }
+
+    .cv-entry-meta {
+        text-align: left;
+        margin-left: 0;
     }
 }

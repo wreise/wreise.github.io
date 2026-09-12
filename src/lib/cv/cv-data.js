@@ -15,18 +15,18 @@ export const cv = {
 	education: [
 		{
 			title: 'PhD student, DataShape, Inria Saclay',
-			date: '09.2020-12.2023',
+			date: { start: '09.2020', end: '12.2023' },
 			description:
 				'Topological descriptors of curves, with applications to vehicle positioning, under the supervision of Frédéric Chazal and Bertrand Michel.'
 		},
 		{
 			title: 'Master in Computational Science and Engineering, EPF Lausanne',
-			date: '09.2017-07.2019',
+			date: { start: '09.2017', end: '07.2019' },
 			description: 'Master project in topological data analysis for audio fingerprinting.'
 		},
 		{
 			title: 'BSc in Mathematics, EPF Lausanne',
-			date: '09.2014-06.2017',
+			date: { start: '09.2014', end: '06.2017' },
 			description:
 				'Third year on exchange, at Ecole Normale Superieure, focus on algebra and topology.'
 		}
@@ -185,18 +185,18 @@ export const cv = {
 	teaching: [
 		{
 			title: 'Assistant, Polytech Paris-Saclay',
-			date: '09.2020-06.2023',
+			date: { start: '09.2020', end: '06.2023' },
 			description:
 				'Exercise sessions for a course in analysis for first-, second-year students of an engineering school.'
 		},
 		{
 			title: 'Assistant, EPFL',
-			date: '02.2018-06.2018',
+			date: { start: '02.2018', end: '06.2018' },
 			description: 'Analysis II for the course of K.-D. Semmler.'
 		},
 		{
 			title: 'Private tutor, EliteIB',
-			date: '09.2015-08.2016',
+			date: { start: '09.2015', end: '08.2016' },
 			description: 'Regular tuition, exam preparation, organising revision courses.'
 		}
 	],
