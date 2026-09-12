@@ -12,6 +12,10 @@ export const cv = {
 		{ href: 'https://wreise.github.io/', label: 'wreise.github.io' }
 	],
 
+	profile:
+		"Product engineer with a PhD in maths. I am passionate about discovering good solutions to complex problems. " +
+		"Be it how to solve a user problem, how to build a reliable system or improve workings of a team.",
+
 	education: [
 		{
 			title: 'PhD student, DataShape, Inria Saclay',
@@ -121,6 +125,17 @@ export const cv = {
 					date: { start: '09.2026' },
 					location: { city: 'Paris', country: 'FR' },
 					description: 'Teaching weekly Balboa classes, 3 different levels'
+				}
+			]
+		},
+		{
+			organisation: 'Grimpo 6',
+			roles: [
+				{
+					title: 'Climbing Gear Manager',
+					date: { start: '09.2023' },
+					location: { city: 'Paris', country: 'FR' },
+					description: 'In charge of making the gear available, handling budget and purchases. Accountable for verifications of its state'
 				}
 			]
 		},

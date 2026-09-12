@@ -107,6 +107,12 @@
     padding-bottom: 0.3em;
 }
 
+/* Profile: a free-text summary opening the CV */
+
+.cv-profile {
+    margin: 0;
+}
+
 /* Entries */
 
 .cv-entry {

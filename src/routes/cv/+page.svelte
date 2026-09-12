@@ -18,15 +18,19 @@
 <div class="cv">
     <CvHeader name={cv.name} subtitle={cv.subtitle} photo={cv.photo} contact={cv.contact} />
 
-    <CvSection title="Education">
-        {#each cv.education as entry}
-            <CvEntry {...entry} />
-        {/each}
+    <CvSection title="Profile">
+        <p class="cv-profile">{cv.profile}</p>
     </CvSection>
 
     <CvSection title="Experience">
         {#each cv.experience as group}
             <CvExperience {...group} />
+        {/each}
+    </CvSection>
+
+    <CvSection title="Education">
+        {#each cv.education as entry}
+            <CvEntry {...entry} />
         {/each}
     </CvSection>
 
