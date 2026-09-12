@@ -37,28 +37,59 @@
 
 /* Header */
 
-.cv-header {
-    margin-bottom: 2em;
+/* The site-wide `header` rule in app.css sets a fixed height and flex
+   alignment; reset what we need so the CV header is self-contained. */
+.cv .cv-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1em 2em;
+    height: auto;
+    margin: 0 0 2em;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid var(--cv-rule);
+}
+
+.cv-identity {
+    flex: 1 1 auto;
 }
 
 .cv-header h1 {
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 0.5em;
+    line-height: 1.2;
+    white-space: nowrap;
+    margin: 0;
     border-bottom: none;
+}
+
+.cv-photo {
+    width: 90px;
+    height: 90px;
+    flex: none;
+    object-fit: cover;
+    border-radius: 50%;
+    align-self: center;
 }
 
 .cv-subtitle {
     color: var(--cv-muted);
-    margin: 0.5em 0;
+    margin: 0.2em 0 0;
 }
 
 .cv-contact {
-    margin: 1em 0;
+    font-style: normal;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: var(--cv-muted);
+    text-align: right;
 }
 
-.cv-contact a {
-    margin-right: 1em;
+@media (max-width: 600px) {
+    .cv-contact {
+        text-align: left;
+    }
 }
 
 /* Sections */

@@ -15,7 +15,7 @@
 </svelte:head>
 
 <div class="cv">
-    <CvHeader name={cv.name} subtitle={cv.subtitle} contact={cv.contact} />
+    <CvHeader name={cv.name} subtitle={cv.subtitle} photo={cv.photo} contact={cv.contact} />
 
     <CvSection title="Education">
         {#each cv.education as entry}

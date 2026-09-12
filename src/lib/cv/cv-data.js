@@ -3,10 +3,13 @@
 
 export const cv = {
 	name: 'Wojciech Reise',
-	subtitle: 'PhD in Applied Mathematics · Paris, France',
+	subtitle: 'PhD in Applied Mathematics',
+	photo: '/data/wReise_profile_picture_small.jpg',
 	contact: [
-		{ href: 'mailto:reisewojciech@gmail.com', label: '✉ reisewojciech@gmail.com' },
-		{ href: 'https://wreise.github.io/', label: '🌐 wreise.github.io' }
+		{ label: '34 Rue Servan, 75011 Paris, France' },
+		{ href: 'tel:+33745081631', label: '+33 7 45 08 16 31' },
+		{ href: 'mailto:reisewojciech@gmail.com', label: 'reisewojciech@gmail.com' },
+		{ href: 'https://wreise.github.io/', label: 'wreise.github.io' }
 	],
 
 	education: [

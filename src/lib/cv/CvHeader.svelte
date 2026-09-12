@@ -1,17 +1,24 @@
 <script>
-    let { name, subtitle, contact = [] } = $props();
+    let { name, subtitle, photo, contact = [] } = $props();
 </script>
 
 <header class="cv-header">
-    <h1>{name}</h1>
-    {#if subtitle}
-        <div class="cv-subtitle">{subtitle}</div>
+    {#if photo}
+        <img class="cv-photo" src={photo} alt={name} />
     {/if}
+    <div class="cv-identity">
+        <h1>{name}</h1>
+        {#if subtitle}
+            <div class="cv-subtitle">{subtitle}</div>
+        {/if}
+    </div>
     {#if contact.length}
-        <div class="cv-contact">
+        <address class="cv-contact">
             {#each contact as { href, label }}
-                <a {href}>{label}</a>
+                <div class="cv-contact-line">
+                    {#if href}<a {href}>{label}</a>{:else}{label}{/if}
+                </div>
             {/each}
-        </div>
+        </address>
     {/if}
 </header>
