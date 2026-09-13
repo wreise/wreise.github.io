@@ -16,11 +16,13 @@
 </svelte:head>
 
 <div class="cv">
-    <CvHeader name={cv.name} subtitle={cv.subtitle} photo={cv.photo} contact={cv.contact} />
-
-    <CvSection title="Profile">
-        <p class="cv-profile">{cv.profile}</p>
-    </CvSection>
+    <CvHeader
+        name={cv.name}
+        subtitle={cv.subtitle}
+        photo={cv.photo}
+        profile={cv.profile}
+        contact={cv.contact}
+    />
 
     <CvSection title="Experience">
         {#each cv.experience as group}

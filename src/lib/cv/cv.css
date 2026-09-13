@@ -40,15 +40,17 @@
 /* The site-wide `header` rule in app.css sets a fixed height and flex
    alignment; reset what we need so the CV header is self-contained. */
 .cv .cv-header {
+    display: block;
+    height: auto;
+    margin: 0 0 1.5em;
+}
+
+.cv-header-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     gap: 1em 2em;
-    height: auto;
-    margin: 0 0 2em;
-    padding-bottom: 0.8em;
-    border-bottom: 1px solid var(--cv-rule);
 }
 
 .cv-identity {
@@ -78,6 +80,11 @@
     margin: 0.2em 0 0;
 }
 
+/* The free-text profile, under the name, credentials and photo. */
+.cv-profile {
+    margin: 1em 0 0;
+}
+
 .cv-contact {
     font-style: normal;
     font-size: 0.9em;
@@ -105,12 +112,6 @@
     margin-bottom: 0.5em;
     border-bottom: 1px solid var(--cv-rule);
     padding-bottom: 0.3em;
-}
-
-/* Profile: a free-text summary opening the CV */
-
-.cv-profile {
-    margin: 0;
 }
 
 /* Entries */
